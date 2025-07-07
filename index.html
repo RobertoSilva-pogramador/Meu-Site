@@ -3,84 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sobre Mim</title>
+  <title>Roberto Silva</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #f0f0f8;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: #f0f2f5;
       color: #333;
     }
-    h1 {
-      text-align: center;
-      color: #2c3e50;
+
+    .container {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 700px;
+      margin: auto;
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
     }
-    img {
-      display: block;
-      margin: 20px auto;
-      width: 150px;
+
+    .profile-image {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
+      object-fit: cover;
       border: 3px solid #2c3e50;
     }
-    p {
-      font-size: 1.1em;
-      line-height: 1.5em;
-      text-align: center;
+
+    .name {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
+
+    .bio {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
     button {
-      display: block;
-      margin: 30px auto;
-      padding: 10px 20px;
-      font-size: 1em;
+      padding: 12px 24px;
       background-color: #2c3e50;
       color: white;
+      font-size: 1em;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
       cursor: pointer;
     }
+
     button:hover {
-      background-color: #34495e;
-    }
-    #moreInfo {
-      display: none;
-      margin-top: 20px;
-      background: white;
-      padding: 15px;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      background-color: #1a252f;
     }
   </style>
 </head>
 <body>
 
-  <h1>Roberto Silva</h1>
-  <img src="20240829_122607.jpg" alt="Foto do Roberto Silva" />
-
-  <p>Olá! Sou um programador apaixonado por tecnologia e aprendizado.</p>
-
-  <button id="btnToggle">Mostrar mais</button>
-
-  <div id="moreInfo">
-    <p>Tenho experiência com MySQL, C, Python e estou aprendendo desenvolvimento web.</p>
-    <p>Gosto de criar projetos práticos e ajudar pessoas a entender tecnologia.</p>
+  <div class="container">
+    <img src="tua-foto.jpg" alt="Foto de perfil" class="profile-image">
+    <div class="name">Roberto Silva</div>
+    <div class="bio">Aqui vai um texto sobre mim. Programador iniciante, apaixonado por tecnologia e desenvolvimento web!</div>
+    <button>Saiba mais</button>
   </div>
-
-  <script>
-    const btn = document.getElementById('btnToggle');
-    const moreInfo = document.getElementById('moreInfo');
-
-    btn.addEventListener('click', () => {
-      if (moreInfo.style.display === 'block') {
-        moreInfo.style.display = 'none';
-        btn.textContent = 'Mostrar mais';
-      } else {
-        moreInfo.style.display = 'block';
-        btn.textContent = 'Mostrar menos';
-      }
-    });
-  </script>
 
 </body>
 </html>
