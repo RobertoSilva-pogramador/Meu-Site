@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Meu Primeiro Site Com Git</title>
+        Meu Primeiro Site Com Git
     </head>
     <body>
         <h1>olá , mundo com html</h1>
